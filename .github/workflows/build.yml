@@ -1,11 +1,11 @@
 name: MVN build, SAST and SCA 
 
 on:
- workflow_call:
-  inputs:
-    file_path:
-      required: true
-      type: string
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "develop" ]
 
 jobs:
  BuildWithGitHubActions:
