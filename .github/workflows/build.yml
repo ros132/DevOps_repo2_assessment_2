@@ -8,8 +8,9 @@ on:
       type: string
 
 jobs:
-  build_and_test:
+ BuildWithGitHubActions:
 
    uses: ros132/Reusabletemplate/.github/workflows/reusable_template.yml@develop
+   
    with:
      file_path: pom.xml
