@@ -1,15 +1,1 @@
-name: Maven CI/CD
 
-on:
- workflow_call:
-  inputs:
-    file_path:
-      required: true
-      type: string
-
-jobs:
-  build_and_test:
-
-   uses: ros132/Reusabletemplate/.github/workflows/resuable_template.yml@main
-   with:
-     file_path: pom.xml
