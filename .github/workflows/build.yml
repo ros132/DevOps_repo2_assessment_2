@@ -10,7 +10,7 @@ on:
 jobs:
  BuildWithGitHubActions:
 
-   uses: ros132/Reusabletemplate/.github/workflows/reusable_template.yml@develop
+   uses: ros132/Reusabletemplate/.github/workflows/reusable_template.yml
    
    with:
      file_path: pom.xml
