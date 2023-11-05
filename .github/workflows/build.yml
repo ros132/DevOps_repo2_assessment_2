@@ -1,10 +1,11 @@
 name: Maven CI/CD
 
 on:
- push:
-    branches: [ main ]
- pull_request:
-    branches: [ main ]
+ workflow_call:
+  inputs:
+    file_path:
+      required: true
+      type: string
 
 jobs:
   build_and_test:
