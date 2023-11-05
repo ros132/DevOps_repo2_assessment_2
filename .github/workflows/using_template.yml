@@ -12,4 +12,4 @@ jobs:
 
    uses: ros132/Reusabletemplate/.github/workflows/resuable_template.yml@main
    with:
-     file_path: 
+     file_path: pom.xml
